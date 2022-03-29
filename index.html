@@ -9,7 +9,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="range" name="" id="size-slider" min="1" value="16" max="100">
-    <div class="grid-container" id="grid-container"></div>
+    <div class="header">
+       Etch-a-Sketch
+    </div>
+    <div class="main">
+        <div class="settings-container">
+            <div class="color-picker-container">
+                <div>
+                    <input data-selection="color" type="color" id="color-picker" class="color-picker">
+                    <p>Pen Color</p>
+                </div>
+            </div>
+            <div class="size-settings-container">
+                <p>Grid Size</p>
+                <input type="range" name="" id="size-slider" min="1" value="16" max="100">
+            </div>
+            <div class="color-settings-container">
+                <button data-selection="color" id="color-btn">Color</button>
+                <button data-selection="rainbow" id="rainbow-btn">Rainbow</button>
+                <button data-selection="eraser" id="eraser-btn">Eraser</button>
+            </div>
+            <div class="reset-settings-container">
+                <button id="clear-btn">Clear</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+        </div>
+        <div class="grid-container" id="grid-container"></div>
+    </div>
+    <div class="footer">
+        <p>Created by <a href="https://github.com/mtrg6/etch-a-sketch">mtrg6</a></p>
+    </div>
 </body>
 </html>

@@ -1,14 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
 * {
     box-sizing: border-box;
+    margin: 0;
+    font-family: 'Bungee', cursive;
+    color: white;
+}
+
+body {
+    background-color: rgb(84, 110, 93);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0px;
+    font-size: 52px;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.settings-container {
+    height: auto;
+    width: auto;
+    background-color: rgb(58, 58, 58);
+    box-shadow: 1px 1px 10px 5px rgb(41, 51, 44);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 50px;
+}
+
+.settings-container p {
+    font-size: 20px;
+}
+
+.color-picker-container div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 15px;
+}
+
+.size-settings-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.color-settings-container, .reset-settings-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reset-settings-container {
+    padding: 20px 0px;
+}
+
+button {
+    width: 300px;
+    padding: 10px 0px;
+    background-color: rgb(58, 58, 58);
+    box-shadow: 1px 1px 10px 1px black;
+    color: white;
+    font-size: 16px;
 }
 
 .grid-container {
     display: grid;
-    width: 600px;
-    height: 600px;
-
+    width: 700px;
+    height: 700px;
+    background-color: white;
+    box-shadow: 1px 1px 10px 5px rgb(41, 51, 44);
 }
 
-.cell {
-    border: 1px solid black;
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    font-size: 28px;
+}
+
+.color-picker {
+    border: none;
+    padding: 2px;
 }
