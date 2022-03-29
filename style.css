@@ -75,6 +75,7 @@ button {
     box-shadow: 1px 1px 10px 1px black;
     color: white;
     font-size: 16px;
+    border: 1px solid white;
 }
 
 .grid-container {
