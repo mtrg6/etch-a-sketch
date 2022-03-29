@@ -17,14 +17,16 @@ function createGrid(gridSize) {
 
 sizeSlider.onchange = (e) => {
     let newSize = e.target.value;
-    currentSize = newSize;
-    newGrid(currentSize);
+    newGrid(newSize);
 }
 
 function newGrid(newSize) {
     gridContainer.innerHTML = '';
     createGrid(newSize);
 }
+
+
+
 
 window.onload = () => {
     createGrid(currentSize);
